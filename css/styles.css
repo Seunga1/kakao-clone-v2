@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand|Pragati+Narrow');
+@import "reset.css";
+@import "status-bar.css";
+@import "header.css";
+@import "nav-bar.css";
+@import "friend.css";
+@import "friends.css";
+@import "find.css";
+@import "more.css";
+@import "settings.css";
+@import "chat.css";
+@import "mobile.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px 20px;
+  color: #6565cd;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size:18px;
+  /* background-color:#d0d0e1; */
+  /* background-image: linear-gradient(to right, #d0d0e1,#efeff5); */
+  background-image: linear-gradient(rgb(255, 255, 255, 0.78), rgb(255, 255, 255, 0.78)),
+  url("https://scontent.cdninstagram.com/vp/d764b64d1d608b16ca6b3b06a0057f1c/5D451339/t51.2885-15/e35/s480x480/51553213_834490526890766_1689607023799198278_n.jpg?_nc_ht=scontent-sea1-1.cdninstagram.com");
+  }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+main {
+  animation: fadeIn 0.5s ease-in-out;
+}

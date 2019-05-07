@@ -1,0 +1,74 @@
+@keyframes lineAnim {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scaleY(2);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.more .more__btn-list,
+.more .more__suggestions-list {
+  margin: 30px 0px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.more__btn-icon:hover {
+  color:#86A8E7;
+}
+.more__btn-icon{
+  animation: lineAnim 1s ease-in-out infinite;
+}
+
+.more__btn-list .more__btn,
+.more .suggestion {
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.more__btn .more__btn-title {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.more .more__suggestions {
+  border-top: 1px solid #f7f7f7;
+  padding-top: 20px;
+}
+
+.more .more__title {
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.suggestion .suggestion__title {
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.suggestion .suggestion__icon {
+  background-image: linear-gradient(to right, #7f7fd5,#86A8E7);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: background-image 0.1s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.suggestion__icon i {
+  font-size: 28px;
+  color: white;
+}
+
+.suggestion .suggestion__icon:hover {
+box-shadow: 0 10px 9px rgba(50, 50, 93, 0.3), 0 5px 7px rgba(0, 0, 0, 0.05);
+background-image: linear-gradient(to right, rgb(230, 233, 240),#7f7fd5);
+}
